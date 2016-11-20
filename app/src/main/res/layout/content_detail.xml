@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.alteration.valdiearsanur.customlistview.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/text_margin"
+            android:background="@drawable/shape_rectangle"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Restaurant Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="Fast Food, Cafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/resto_placeholder"
+                android:id="@+id/imageView4"
+                android:layout_margin="2dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/resto_placeholder"
+                android:id="@+id/imageView6"
+                android:layout_margin="2dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text" />
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
